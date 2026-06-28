@@ -43,8 +43,12 @@ Output as plain text with clear section headings.
       })
     });
 
-    const data = await response.json();
-    document.getElementById("output").innerText = data.choices[0].message.content;
+   const data = await response.json();
+
+console.log(data);
+
+document.getElementById("output").innerText =
+JSON.stringify(data, null, 2);
   } catch (error) {
     document.getElementById("output").innerText = "Error: " + error;
   }
