@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Resume Builder</h1>
+    <p>Fill in your details below and click Generate.</p>
+
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="text" id="contact" placeholder="Phone / Email">
+    <input type="text" id="education" placeholder="Education (Degree, College, Year)">
+    <input type="text" id="skills" placeholder="Skills (comma separated)">
+    <textarea id="experience" placeholder="Projects / Internships / Work Experience"></textarea>
+    <textarea id="achievements" placeholder="Achievements / Extra-Curricular"></textarea>
+    <input type="text" id="apikey" placeholder="Paste your OpenAI API key here">
+
+    <button onclick="generateResume()">Generate Resume</button>
+
+    <h2>Your Resume:</h2>
+    <pre id="output">Your resume will appear here...</pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
